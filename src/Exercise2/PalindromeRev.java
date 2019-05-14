@@ -13,8 +13,9 @@ public class PalindromeRev {
         return revString;
     }
 
-    public static boolean checkPalindrome(String input,String revString)
+    public static boolean checkPalindrome(String input)
     {
+        String revString=reverse(input);
         if(input.equals(revString))
         {
             return true;
@@ -28,8 +29,7 @@ public class PalindromeRev {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter string : ");
         String input=sc.nextLine();
-        String revString=reverse(input);
-        if(checkPalindrome(input,revString))
+        if(checkPalindrome(input))
         {
             System.out.println(input+" is Palindrome");
         }

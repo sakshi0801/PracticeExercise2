@@ -6,28 +6,42 @@ public class FactorialExample {
     public static void intFactorial(int limit)
     {
         int factorial;
-        for(int flag=1;flag<=limit;flag++)
+        if(limit==0)
         {
             factorial=1;
-            for(int flag2=1;flag2<=flag;flag2++)
+            System.out.println("Factorial of "+limit+" is "+factorial);
+        }
+        else{
+            for(int flag=1;flag<=limit;flag++)
             {
-                factorial=factorial*flag2;
+                factorial=1;
+                for(int flag2=1;flag2<=flag;flag2++)
+                {
+                    factorial=factorial*flag2;
+                }
+                System.out.println("Factorial of "+flag+" is "+factorial);
             }
-            System.out.println("Factorial of "+flag+" is "+factorial);
         }
     }
 
     public static void longFactorial(int limit)
     {
         long factorial;
-        for(int flag=1;flag<=limit;flag++)
+        if(limit==0)
         {
             factorial=1;
-            for(int flag2=1;flag2<=flag;flag2++)
+            System.out.println("Factorial of "+limit+" is "+factorial);
+        }
+        else{
+            for(int flag=1;flag<=limit;flag++)
             {
-                factorial=factorial*flag2;
+                factorial=1;
+                for(int flag2=1;flag2<=flag;flag2++)
+                {
+                    factorial=factorial*flag2;
+                }
+                System.out.println("Factorial of "+flag+" is "+factorial);
             }
-            System.out.println("Factorial of "+flag+" is "+factorial);
         }
     }
 

@@ -5,16 +5,19 @@ import java.util.Scanner;
 public class PowerFour {
     public static boolean findPower(int num){
         int temp=num;
+        int remainder=0;
         while(temp>=4)
         {
+            remainder=temp%4;
             temp=temp/4;
+
         }
-        if(temp!=1)
+        if(temp==1 && remainder==0)
         {
-            return false;
+            return true;
         }
         else {
-            return true;
+            return false;
         }
     }
     public static void main(String[] args)
